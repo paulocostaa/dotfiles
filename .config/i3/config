@@ -64,8 +64,8 @@ bindsym $mod+Ctrl+minus exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SIN
 bindsym $mod+Ctrl+m exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 # screenshot (copies to clipboard)
-bindsym $mod+Shift+S exec --no-startup-id scrot -s -e 'xclip -selection clipboard -t image/png -i $f' # select
-bindsym Print exec --no-startup-id scrot -e 'xclip -selection clipboard -t image/png -i $f'  # whole screen
+bindsym $mod+Shift+S exec --no-startup-id screenshot -s # select
+bindsym Print exec --no-startup-id screenshot # whole screen
 
 # workspaces
 set $ws1 "1"
