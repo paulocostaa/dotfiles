@@ -1,0 +1,18 @@
+general {
+    interval = 1
+}
+
+order += "tztime local"
+order += "volume master"
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+    format = "%volume  "
+    format_muted = " "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
